@@ -1,4 +1,4 @@
-﻿using PetStoreAPI.Domain.Entities;
+﻿using PetStoreAPI.Domain;
 using System;
 using System.Collections.Generic;
 using System.Text;
