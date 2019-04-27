@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PetStoreAPI.Domain.ApiModels;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading;
@@ -8,7 +9,7 @@ namespace PetStoreAPI.Domain.Supervisor
 {
     public partial class PetStoreSupervisor
     {
-        public Task<Animal> AddAnimalAsync(Animal animal, CancellationToken ct = default)
+        public Task<AnimalApiModel> AddAnimalAsync(AnimalApiModel animal, CancellationToken ct = default)
         {
             throw new NotImplementedException();
         }
@@ -18,17 +19,17 @@ namespace PetStoreAPI.Domain.Supervisor
             throw new NotImplementedException();
         }
 
-        public Task<List<Animal>> GetAllAnimalAsync(CancellationToken ct = default)
+        public Task<List<AnimalApiModel>> GetAllAnimalAsync(CancellationToken ct = default)
         {
             throw new NotImplementedException();
         }
 
-        public Task<Animal> GetAnimalByIdAsync(string id, CancellationToken ct = default)
+        public Task<AnimalApiModel> GetAnimalByIdAsync(string id, CancellationToken ct = default)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> UpdateAnimalAsync(Animal animal, CancellationToken ct = default)
+        public Task<bool> UpdateAnimalAsync(AnimalApiModel animal, CancellationToken ct = default)
         {
             throw new NotImplementedException();
         }
